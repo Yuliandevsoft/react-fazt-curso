@@ -1,12 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Greetings, UserCard } from "./Greetings";
+import {Button} from './Button_Defaultprops';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
-    <UserCard
+
+  <Button text ='click me'/>
+  <Button text = 'Pagar'/>
+  <Button text = '' name='Joe'/>
+  
+  
+    {/* <UserCard
       name="Ryan Rey"
       amount={3000}
       married={true}
@@ -19,11 +26,14 @@ root.render(
       amount={10000}
       married={false}
       point={[22, 31.5, 99.8, 29.2]}
-      address={{ street: "123 Avenue", city: "New York" }}
+      address={{ street: "123 Avenue", city: "New York" }} 
+      
+      />
+      */}
     
     
     
-    />
+    
 
   </>
 );
