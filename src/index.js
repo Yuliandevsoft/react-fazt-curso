@@ -1,19 +1,29 @@
 import React from "react";
-import ReactDom from "react-dom/client";
+import ReactDOM from "react-dom/client";
+import { Greetings, UserCard } from "./Greetings";
 
-const root = ReactDom.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function Greeting() {
-  return (
-    <div>
-      <h1>Este es un componente</h1>
-      <p>Lorem 123</p>
-    </div>
-  );
-}
 root.render(
-  <div>
-    <Greeting />
-    <Greeting />
-  </div>
+  <>
+    <UserCard
+      name="Ryan Rey"
+      amount={3000}
+      married={true}
+      point={[99, 33.5, 77.8, 22.2]}
+      address={{ street: "123 main", city: "New York" }}
+      greet={function() {alert('Hello')}}
+    />
+    <UserCard
+          name="Yulian Rafael"
+      amount={10000}
+      married={false}
+      point={[22, 31.5, 99.8, 29.2]}
+      address={{ street: "123 Avenue", city: "New York" }}
+    
+    
+    
+    />
+
+  </>
 );
