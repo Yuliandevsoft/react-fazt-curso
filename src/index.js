@@ -2,16 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Greetings, UserCard } from "./Greetings";
 import {Button} from './Button_Defaultprops';
+import { TaskCard } from "./Task";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
 
-  <Button text ='click me'/>
+  <TaskCard ready = {false}/>
+
+
+
+
+
+
+  {/* <Button text ='click me'/>
   <Button text = 'Pagar'/>
-  <Button text = '' name='Joe'/>
-  
+  <Button text = 'pulsar' name='Joe'/>
+   */}
   
     {/* <UserCard
       name="Ryan Rey"
@@ -30,10 +38,6 @@ root.render(
       
       />
       */}
-    
-    
-    
-    
 
   </>
 );

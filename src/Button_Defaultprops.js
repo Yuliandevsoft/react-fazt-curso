@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
-export function Button({text, name}){
-    console.log(text)
+export function Button({text, name = "user"}){
+    console.log(text, name)
     return <button>
         {text} - {name}
     </button>
@@ -9,8 +9,4 @@ export function Button({text, name}){
 
 Button.propTypes ={
     text: PropTypes.string.isRequired
-}
-
-Button.defaultProps = {
-    name: 'Some user'
 }
