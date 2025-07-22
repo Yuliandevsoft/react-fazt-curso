@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Greetings, UserCard } from "./Greetings";
 import {Button} from './Button_Defaultprops';
 import { TaskCard } from "./Task";
+import {Saludar} from './SaludarClassComponente'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -10,10 +11,7 @@ root.render(
   <>
 
   <TaskCard ready = {false}/>
-
-
-
-
+  <Saludar/>
 
 
   {/* <Button text ='click me'/>
