@@ -4,6 +4,7 @@ import { Greetings, UserCard } from "./Greetings";
 import { Button } from "./Button_Defaultprops";
 import { TaskCard } from "./Task";
 import { Saludar } from "./SaludarClassComponente";
+import {Posts}  from "./Posts-component";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -33,6 +34,8 @@ root.render(
 
       <button>Enviar</button>
     </form>
+
+    <Posts/>
 
     {/* <Button text ='click me'/>
   <Button text = 'Pagar'/>
