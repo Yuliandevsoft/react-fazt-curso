@@ -1,12 +1,33 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Greetings, UserCard } from "./Greetings";
-import { Button } from "./Button_Defaultprops";
-import { TaskCard } from "./Task";
-import { Saludar } from "./SaludarClassComponente";
+// import { Greetings, UserCard } from "./Greetings";
+// import { Button } from "./Button_Defaultprops";
+// import { TaskCard } from "./Task";
+// import { Saludar } from "./SaludarClassComponente";
 import {Posts}  from "./Posts-component";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const user =[
+  {
+    id: 1,
+    name: "Yulian Rafael",
+    image: 'https://robohash.org/user1'
+  },
+  {
+    id: 2,
+    name: "Julito Alimaña",
+    image: 'https://robohash.org/user2'
+  }
+]
+
+
+
+
+
+
+
+
 
 {
   /* funcion por fuera del event handler onChange */
@@ -17,11 +38,11 @@ const handleChange = (evento) => {
 
 root.render(
   <>
-    <TaskCard ready={true} />
+    {/* <TaskCard ready={true} />
     <Saludar />
     <Button text={"saludar"} />
 
-    {/* usando event handler onChange */}
+    {/* usando event handler onChange 
     <input id="hola" onChange={handleChange} />
 
     <form
@@ -33,8 +54,8 @@ root.render(
       <h1>Registro de usuario</h1>
 
       <button>Enviar</button>
-    </form>
-
+    </form> }
+*/}
     <Posts/>
 
     {/* <Button text ='click me'/>
